@@ -51,5 +51,7 @@ int main() {
     //apply modpow
     std::cout << modpow(res1, l)%MOD << "\n";
 
+    //overall complexity O(n+log MOD + log l)
+
     return 0;
 }
