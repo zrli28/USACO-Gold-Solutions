@@ -84,7 +84,7 @@ int main() {
                     hmin.pop_back();
                 }
 
-                int mn = ((hmin.empty()) ? INT_MAX : hmin.front());
+                int mn = (hmin.empty() ? INT_MAX : hmin.front());
 
                 //same with max heap
                 auto &hmax = maxs[j];
@@ -95,7 +95,7 @@ int main() {
                     hmax.pop_back();
                 }
 
-                int mxv = hmax.empty() ? 0 : hmax.front();
+                int mxv = (hmax.empty() ? 0 : hmax.front());
 
                 if(mn < suffmn) suffmn = mn;
                 if(mxv > suffmx) suffmx = mxv;
